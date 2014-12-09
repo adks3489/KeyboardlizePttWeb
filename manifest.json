@@ -1,0 +1,17 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Keyboardlize PttWeb",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "透過本套件可以讓你用鍵盤操作網頁板的PTT",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://www.ptt.cc/bbs/*"
+    ],
+    "content_scripts": [ {
+      "matches": ["https://www.ptt.cc/*"],
+      "js": ["jquery.min.js","background.js"]
+    } ]
+}
